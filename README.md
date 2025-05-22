@@ -1,4 +1,4 @@
-# Global Currency Tool
+# Global Exhange Tool
 
 ## Overview
 
@@ -6,7 +6,7 @@ A fully responsive currency conversion tool with a unique spending power feature
 
 ## Live Demo
 
-→ [Global Currency Tool](https://pedroalves-dv.github.io/global-currency-tool/)
+→ [Global Exchange Tool](https://pedroalves-dv.github.io/global-exchange-tool/)
 
 ![Screenshot of Global Currency Tool](src/assets/global-currency-tool-ui.jpg)
 
