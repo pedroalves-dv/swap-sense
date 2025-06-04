@@ -3,22 +3,22 @@ import './Header.scss';
 import logo from '../../assets/logo.png';
 
 function Header() {
-  const [darkMode, setDarkMode] = useState(false);
+  const [lightMode, setLightMode] = useState(true);
 
   useEffect(() => {
-    if (darkMode) {
-      document.body.classList.add('dark-mode');
-      document.querySelector('.header')?.classList.add('dark-mode');
-      document.querySelector('.footer')?.classList.add('dark-mode');
+    if (lightMode) {
+      document.body.classList.add('light-mode');
+      document.querySelector('.header')?.classList.add('light-mode');
+      document.querySelector('.footer')?.classList.add('light-mode');
     } else {
-      document.body.classList.remove('dark-mode');
-      document.querySelector('.header')?.classList.remove('dark-mode');
-      document.querySelector('.footer')?.classList.remove('dark-mode');
+      document.body.classList.remove('light-mode');
+      document.querySelector('.header')?.classList.remove('light-mode');
+      document.querySelector('.footer')?.classList.remove('light-mode');
     }
-  }, [darkMode]);
+  }, [lightMode]);
 
-  const toggleDarkMode = () => {
-    setDarkMode(!darkMode);
+  const toggleLightMode = () => {
+    setLightMode(!lightMode);
   };
   return (
     <div className="header">
@@ -34,9 +34,9 @@ function Header() {
       </p>
       <button
         type="button"
-        onClick={toggleDarkMode}
-        className={`dark-mode-toggle ${darkMode ? 'active' : ''}`}
-        aria-label="Toggle Dark Mode"
+        onClick={toggleLightMode}
+        className={`dark-mode-toggle ${lightMode ? 'active' : ''}`}
+        aria-label="Toggle Light Mode"
       />
     </div>
   );

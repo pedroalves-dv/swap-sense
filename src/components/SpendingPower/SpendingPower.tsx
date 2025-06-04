@@ -11,6 +11,7 @@ interface Purchase {
 
 interface SpendingPowerProps {
   currency: string;
+  externalAmount: number;
 }
 
 // Currency-to-country mapping
@@ -142,12 +143,16 @@ const basePrices = {
   groceries: 100, // Weekly groceries
   rent: 1000, // Monthly rent
 };
-function SpendingPower({ currency }: SpendingPowerProps) {
+function SpendingPower({ currency, externalAmount }: SpendingPowerProps) {
   const [amount, setAmount] = useState<number>(100);
   const [purchases, setPurchases] = useState<Purchase[]>([]);
 
   // Find country based on selected currency
   const country = currencyToCountryMap[currency] || 'United States';
+
+  useEffect(() => {
+    setAmount(externalAmount);
+  }, [externalAmount]);
 
   useEffect(() => {
     // Find country data with a flexible match

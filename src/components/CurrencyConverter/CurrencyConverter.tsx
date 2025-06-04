@@ -8,10 +8,18 @@ interface Currency {
 
 interface CurrencyConverterProps {
   setToCurrency: (currency: string) => void;
+  amount: number;
+  setAmount: (amount: number) => void;
+  setConvertedAmount: (amount: number) => void;
 }
 
-function CurrencyConverter({ setToCurrency }: CurrencyConverterProps) {
-  const [amount, setAmount] = useState<number>(1);
+function CurrencyConverter({
+  setToCurrency,
+  amount,
+  setAmount,
+  setConvertedAmount,
+}: CurrencyConverterProps) {
+  // const [amount, setAmount] = useState<number>(1);
   const [displayAmount, setDisplayAmount] = useState<string>('1');
   const [fromCurrency, setFromCurrency] = useState<string>('EUR');
   const [toCurrency, setToCurrencyState] = useState<string>('USD');
@@ -111,6 +119,11 @@ function CurrencyConverter({ setToCurrency }: CurrencyConverterProps) {
       clearInterval(intervalId);
     };
   }, [amount, exchangeRate]);
+
+  useEffect(() => {
+    const converted = Math.floor(amount * exchangeRate); // round down
+    setConvertedAmount(converted);
+  }, [amount, exchangeRate, setConvertedAmount]);
 
   return (
     <div className="currency-converter">

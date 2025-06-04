@@ -30,23 +30,23 @@ body {
   margin: 0;
 }
 
-body.dark-mode {
+body.light-mode {
   background-color: var(--color-midlight);
   color: var(--color-dark);
 }
 
-.dark-mode {
+.light-mode {
   background-color: var(--color-light);
   color: var(--color-dark);
 }
 
 body,
-body.dark-mode,
+body.light-mode,
 .header,
-.header.dark-mode,
+.header.light-mode,
 .footer,
-.footer.dark-mode,
-.dark-mode {
+.footer.light-mode,
+.light-mode {
   transition: background-color 0.4s ease-in-out, color 0.4s ease-in-out;
 }
 

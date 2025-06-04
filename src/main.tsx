@@ -10,16 +10,26 @@ import './styles/index.scss';
 
 function Main() {
   const [toCurrency, setToCurrency] = useState<string>('USD');
+  const [converterAmount, setConverterAmount] = useState<number>(1);
+  const [convertedAmount, setConvertedAmount] = useState<number>(1);
 
   return (
     <div className="app">
       <Header />
       <div className="main-container">
         <div className="currency-container">
-          <CurrencyConverter setToCurrency={setToCurrency} />
+          <CurrencyConverter
+            setToCurrency={setToCurrency}
+            amount={converterAmount}
+            setAmount={setConverterAmount}
+            setConvertedAmount={setConvertedAmount}
+          />
         </div>
         <div className="spending-power-container">
-          <SpendingPower currency={toCurrency} />
+          <SpendingPower
+            currency={toCurrency}
+            externalAmount={convertedAmount}
+          />
         </div>
       </div>
       <Footer />
