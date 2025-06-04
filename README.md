@@ -38,14 +38,14 @@ To run this project locally, follow these steps:
 1. Clone the repository:
 
 ```sh
-git clone https://github.com/your-username/euro-converter.git
+git clone https://github.com/your-username/global-exchange-tool.git
 
 ```
 
 2. Navigate to the project directory:
 
 ```sh
-   cd euro-converter
+   cd global-exchange-tool
 ```
 
 3. Install dependecies:
