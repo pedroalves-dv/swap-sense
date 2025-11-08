@@ -124,7 +124,9 @@ function SpendingPower({ currency, amount, setAmount }: SpendingPowerProps) {
 
   useEffect(() => {
     let cancelled = false;
-    fetch('/data/cost-of-living.json')
+    // Use Vite's BASE_URL so the request works both in dev ("/") and when the
+    // app is served from a subpath (e.g. GitHub Pages project site).
+    fetch(`${import.meta.env.BASE_URL}data/cost-of-living.json`)
       .then((r) => {
         if (!r.ok) throw new Error('no public COL file');
         return r.json();
