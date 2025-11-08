@@ -1,0 +1,1212 @@
+[
+  {
+    "Rank": 1,
+    "Country": "Switzerland",
+    "Cost of Living Index": 101.1,
+    "Rent Index": 46.5,
+    "Cost of Living Plus Rent Index": 74.9,
+    "Groceries Index": 109.1,
+    "Restaurant Price Index": 97,
+    "Local Purchasing Power Index": 158.7
+  },
+  {
+    "Rank": 2,
+    "Country": "Bahamas",
+    "Cost of Living Index": 85,
+    "Rent Index": 36.7,
+    "Cost of Living Plus Rent Index": 61.8,
+    "Groceries Index": 81.6,
+    "Restaurant Price Index": 83.3,
+    "Local Purchasing Power Index": 54.6
+  },
+  {
+    "Rank": 3,
+    "Country": "Iceland",
+    "Cost of Living Index": 83,
+    "Rent Index": 39.2,
+    "Cost of Living Plus Rent Index": 62,
+    "Groceries Index": 88.4,
+    "Restaurant Price Index": 86.8,
+    "Local Purchasing Power Index": 120.3
+  },
+  {
+    "Rank": 4,
+    "Country": "Singapore",
+    "Cost of Living Index": 76.7,
+    "Rent Index": 67.2,
+    "Cost of Living Plus Rent Index": 72.1,
+    "Groceries Index": 74.6,
+    "Restaurant Price Index": 50.4,
+    "Local Purchasing Power Index": 111.1
+  },
+  {
+    "Rank": 5,
+    "Country": "Barbados",
+    "Cost of Living Index": 76.6,
+    "Rent Index": 19,
+    "Cost of Living Plus Rent Index": 48.9,
+    "Groceries Index": 80.8,
+    "Restaurant Price Index": 69.4,
+    "Local Purchasing Power Index": 43.5
+  },
+  {
+    "Rank": 6,
+    "Country": "Norway",
+    "Cost of Living Index": 76,
+    "Rent Index": 26.2,
+    "Cost of Living Plus Rent Index": 52.1,
+    "Groceries Index": 79,
+    "Restaurant Price Index": 73.5,
+    "Local Purchasing Power Index": 114.7
+  },
+  {
+    "Rank": 7,
+    "Country": "Denmark",
+    "Cost of Living Index": 72.3,
+    "Rent Index": 26.4,
+    "Cost of Living Plus Rent Index": 50.2,
+    "Groceries Index": 64.8,
+    "Restaurant Price Index": 81.3,
+    "Local Purchasing Power Index": 127.2
+  },
+  {
+    "Rank": 8,
+    "Country": "Hong Kong (China)",
+    "Cost of Living Index": 70.8,
+    "Rent Index": 59.4,
+    "Cost of Living Plus Rent Index": 65.3,
+    "Groceries Index": 84.6,
+    "Restaurant Price Index": 46.2,
+    "Local Purchasing Power Index": 109.3
+  },
+  {
+    "Rank": 9,
+    "Country": "United States",
+    "Cost of Living Index": 70.4,
+    "Rent Index": 180.7,
+    "Cost of Living Plus Rent Index": 56.6,
+    "Groceries Index": 75,
+    "Restaurant Price Index": 67.2,
+    "Local Purchasing Power Index": 142.3
+  },
+  {
+    "Rank": 10,
+    "Country": "Australia",
+    "Cost of Living Index": 70.2,
+    "Rent Index": 33.4,
+    "Cost of Living Plus Rent Index": 52.5,
+    "Groceries Index": 77.3,
+    "Restaurant Price Index": 62.5,
+    "Local Purchasing Power Index": 127.4
+  },
+  {
+    "Rank": 11,
+    "Country": "Austria",
+    "Cost of Living Index": 65.1,
+    "Rent Index": 22.5,
+    "Cost of Living Plus Rent Index": 44.7,
+    "Groceries Index": 66.4,
+    "Restaurant Price Index": 59.3,
+    "Local Purchasing Power Index": 102.4
+  },
+  {
+    "Rank": 12,
+    "Country": "Canada",
+    "Cost of Living Index": 64.8,
+    "Rent Index": 33.2,
+    "Cost of Living Plus Rent Index": 49.6,
+    "Groceries Index": 71.2,
+    "Restaurant Price Index": 61.7,
+    "Local Purchasing Power Index": 103.7
+  },
+  {
+    "Rank": 13,
+    "Country": "New Zealand",
+    "Cost of Living Index": 64.6,
+    "Rent Index": 25.9,
+    "Cost of Living Plus Rent Index": 46,
+    "Groceries Index": 71.9,
+    "Restaurant Price Index": 57.1,
+    "Local Purchasing Power Index": 121
+  },
+  {
+    "Rank": 14,
+    "Country": "Ireland",
+    "Cost of Living Index": 64.4,
+    "Rent Index": 42.3,
+    "Cost of Living Plus Rent Index": 53.8,
+    "Groceries Index": 59.3,
+    "Restaurant Price Index": 65.3,
+    "Local Purchasing Power Index": 101.1
+  },
+  {
+    "Rank": 15,
+    "Country": "France",
+    "Cost of Living Index": 63.7,
+    "Rent Index": 21,
+    "Cost of Living Plus Rent Index": 43.2,
+    "Groceries Index": 69.5,
+    "Restaurant Price Index": 56.3,
+    "Local Purchasing Power Index": 102.4
+  },
+  {
+    "Rank": 16,
+    "Country": "Puerto Rico",
+    "Cost of Living Index": 63.3,
+    "Rent Index": 19.5,
+    "Cost of Living Plus Rent Index": 42.3,
+    "Groceries Index": 64.1,
+    "Restaurant Price Index": 53.1,
+    "Local Purchasing Power Index": 103.5
+  },
+  {
+    "Rank": 17,
+    "Country": "Finland",
+    "Cost of Living Index": 63.2,
+    "Rent Index": 19.7,
+    "Cost of Living Plus Rent Index": 42.4,
+    "Groceries Index": 63,
+    "Restaurant Price Index": 63.6,
+    "Local Purchasing Power Index": 118
+  },
+  {
+    "Rank": 18,
+    "Country": "Netherlands",
+    "Cost of Living Index": 63.1,
+    "Rent Index": 33.5,
+    "Cost of Living Plus Rent Index": 48.9,
+    "Groceries Index": 59.9,
+    "Restaurant Price Index": 61.2,
+    "Local Purchasing Power Index": 124.9
+  },
+  {
+    "Rank": 19,
+    "Country": "Israel",
+    "Cost of Living Index": 62.7,
+    "Rent Index": 27.1,
+    "Cost of Living Plus Rent Index": 45.6,
+    "Groceries Index": 59.6,
+    "Restaurant Price Index": 68,
+    "Local Purchasing Power Index": 99.4
+  },
+  {
+    "Rank": 20,
+    "Country": "Luxembourg",
+    "Cost of Living Index": 62.4,
+    "Rent Index": 40.5,
+    "Cost of Living Plus Rent Index": 51.9,
+    "Groceries Index": 64.1,
+    "Restaurant Price Index": 68.7,
+    "Local Purchasing Power Index": 182.5
+  },
+  {
+    "Rank": 21,
+    "Country": "Germany",
+    "Cost of Living Index": 62.2,
+    "Rent Index": 24.4,
+    "Cost of Living Plus Rent Index": 44,
+    "Groceries Index": 60.8,
+    "Restaurant Price Index": 52.8,
+    "Local Purchasing Power Index": 120.2
+  },
+  {
+    "Rank": 22,
+    "Country": "United Kingdom",
+    "Cost of Living Index": 62,
+    "Rent Index": 31.1,
+    "Cost of Living Plus Rent Index": 47.1,
+    "Groceries Index": 56.9,
+    "Restaurant Price Index": 62.7,
+    "Local Purchasing Power Index": 115.2
+  },
+  {
+    "Rank": 23,
+    "Country": "Belgium",
+    "Cost of Living Index": 61.1,
+    "Rent Index": 20.1,
+    "Cost of Living Plus Rent Index": 41.4,
+    "Groceries Index": 57.5,
+    "Restaurant Price Index": 66,
+    "Local Purchasing Power Index": 109.8
+  },
+  {
+    "Rank": 24,
+    "Country": "South Korea",
+    "Cost of Living Index": 60.1,
+    "Rent Index": 16,
+    "Cost of Living Plus Rent Index": 38.9,
+    "Groceries Index": 81.4,
+    "Restaurant Price Index": 31.4,
+    "Local Purchasing Power Index": 109.4
+  },
+  {
+    "Rank": 25,
+    "Country": "Sweden",
+    "Cost of Living Index": 59.3,
+    "Rent Index": 20.9,
+    "Cost of Living Plus Rent Index": 40.9,
+    "Groceries Index": 60.8,
+    "Restaurant Price Index": 54.7,
+    "Local Purchasing Power Index": 122.6
+  },
+  {
+    "Rank": 26,
+    "Country": "Italy",
+    "Cost of Living Index": 56.2,
+    "Rent Index": 19.2,
+    "Cost of Living Plus Rent Index": 38.5,
+    "Groceries Index": 57,
+    "Restaurant Price Index": 53.3,
+    "Local Purchasing Power Index": 78.3
+  },
+  {
+    "Rank": 27,
+    "Country": "United Arab Emirates",
+    "Cost of Living Index": 55.8,
+    "Rent Index": 41.3,
+    "Cost of Living Plus Rent Index": 48.9,
+    "Groceries Index": 45.3,
+    "Restaurant Price Index": 49.2,
+    "Local Purchasing Power Index": 127.9
+  },
+  {
+    "Rank": 28,
+    "Country": "Cyprus",
+    "Cost of Living Index": 54.7,
+    "Rent Index": 24.8,
+    "Cost of Living Plus Rent Index": 40.4,
+    "Groceries Index": 49.6,
+    "Restaurant Price Index": 53.2,
+    "Local Purchasing Power Index": 71.4
+  },
+  {
+    "Rank": 29,
+    "Country": "Uruguay",
+    "Cost of Living Index": 54.1,
+    "Rent Index": 13.8,
+    "Cost of Living Plus Rent Index": 34.8,
+    "Groceries Index": 52.1,
+    "Restaurant Price Index": 50.2,
+    "Local Purchasing Power Index": 56.3
+  },
+  {
+    "Rank": 30,
+    "Country": "Jamaica",
+    "Cost of Living Index": 53.9,
+    "Rent Index": 14.1,
+    "Cost of Living Plus Rent Index": 34.8,
+    "Groceries Index": 62,
+    "Restaurant Price Index": 38.8,
+    "Local Purchasing Power Index": 32.7
+  },
+  {
+    "Rank": 31,
+    "Country": "Malta",
+    "Cost of Living Index": 52.8,
+    "Rent Index": 24.2,
+    "Cost of Living Plus Rent Index": 39.1,
+    "Groceries Index": 50.6,
+    "Restaurant Price Index": 56.2,
+    "Local Purchasing Power Index": 68.1
+  },
+  {
+    "Rank": 32,
+    "Country": "Trinidad And Tobago",
+    "Cost of Living Index": 52.6,
+    "Rent Index": 13.1,
+    "Cost of Living Plus Rent Index": 33.7,
+    "Groceries Index": 55.3,
+    "Restaurant Price Index": 43.9,
+    "Local Purchasing Power Index": 43.7
+  },
+  {
+    "Rank": 33,
+    "Country": "Costa Rica",
+    "Cost of Living Index": 52.3,
+    "Rent Index": 16.7,
+    "Cost of Living Plus Rent Index": 35.2,
+    "Groceries Index": 56.1,
+    "Restaurant Price Index": 43.1,
+    "Local Purchasing Power Index": 46.2
+  },
+  {
+    "Rank": 34,
+    "Country": "Bahrain",
+    "Cost of Living Index": 52.3,
+    "Rent Index": 20.5,
+    "Cost of Living Plus Rent Index": 37,
+    "Groceries Index": 46.9,
+    "Restaurant Price Index": 44.7,
+    "Local Purchasing Power Index": 105
+  },
+  {
+    "Rank": 35,
+    "Country": "Greece",
+    "Cost of Living Index": 52,
+    "Rent Index": 12.9,
+    "Cost of Living Plus Rent Index": 33.2,
+    "Groceries Index": 48.4,
+    "Restaurant Price Index": 51.3,
+    "Local Purchasing Power Index": 53
+  },
+  {
+    "Rank": 36,
+    "Country": "Estonia",
+    "Cost of Living Index": 52,
+    "Rent Index": 15,
+    "Cost of Living Plus Rent Index": 34.2,
+    "Groceries Index": 46.4,
+    "Restaurant Price Index": 50.6,
+    "Local Purchasing Power Index": 80.4
+  },
+  {
+    "Rank": 37,
+    "Country": "Qatar",
+    "Cost of Living Index": 51.3,
+    "Rent Index": 36.1,
+    "Cost of Living Plus Rent Index": 44,
+    "Groceries Index": 43.9,
+    "Restaurant Price Index": 47.2,
+    "Local Purchasing Power Index": 161.1
+  },
+  {
+    "Rank": 38,
+    "Country": "Slovenia",
+    "Cost of Living Index": 49.9,
+    "Rent Index": 18.7,
+    "Cost of Living Plus Rent Index": 34.9,
+    "Groceries Index": 49,
+    "Restaurant Price Index": 43.4,
+    "Local Purchasing Power Index": 80.9
+  },
+  {
+    "Rank": 39,
+    "Country": "Latvia",
+    "Cost of Living Index": 49.1,
+    "Rent Index": 11.2,
+    "Cost of Living Plus Rent Index": 30.9,
+    "Groceries Index": 42.8,
+    "Restaurant Price Index": 44.9,
+    "Local Purchasing Power Index": 66.9
+  },
+  {
+    "Rank": 40,
+    "Country": "Spain",
+    "Cost of Living Index": 47.3,
+    "Rent Index": 22.9,
+    "Cost of Living Plus Rent Index": 35.6,
+    "Groceries Index": 46,
+    "Restaurant Price Index": 44.1,
+    "Local Purchasing Power Index": 92.1
+  },
+  {
+    "Rank": 41,
+    "Country": "Lithuania",
+    "Cost of Living Index": 47.1,
+    "Rent Index": 15.6,
+    "Cost of Living Plus Rent Index": 31.9,
+    "Groceries Index": 44.2,
+    "Restaurant Price Index": 43.5,
+    "Local Purchasing Power Index": 75.5
+  },
+  {
+    "Rank": 42,
+    "Country": "Slovakia",
+    "Cost of Living Index": 46.7,
+    "Rent Index": 14.8,
+    "Cost of Living Plus Rent Index": 31.4,
+    "Groceries Index": 46.7,
+    "Restaurant Price Index": 34.5,
+    "Local Purchasing Power Index": 68.3
+  },
+  {
+    "Rank": 43,
+    "Country": "Cuba",
+    "Cost of Living Index": 46.7,
+    "Rent Index": 11.8,
+    "Cost of Living Plus Rent Index": 29.9,
+    "Groceries Index": 43,
+    "Restaurant Price Index": 26,
+    "Local Purchasing Power Index": 2.3
+  },
+  {
+    "Rank": 44,
+    "Country": "Czech Republic",
+    "Cost of Living Index": 46.6,
+    "Rent Index": 18.8,
+    "Cost of Living Plus Rent Index": 33.3,
+    "Groceries Index": 44.4,
+    "Restaurant Price Index": 34.1,
+    "Local Purchasing Power Index": 84
+  },
+  {
+    "Rank": 45,
+    "Country": "Panama",
+    "Cost of Living Index": 46.4,
+    "Rent Index": 20.1,
+    "Cost of Living Plus Rent Index": 33.8,
+    "Groceries Index": 48.3,
+    "Restaurant Price Index": 42.2,
+    "Local Purchasing Power Index": 42.2
+  },
+  {
+    "Rank": 46,
+    "Country": "Japan",
+    "Cost of Living Index": 46.1,
+    "Rent Index": 13.4,
+    "Cost of Living Plus Rent Index": 30.4,
+    "Groceries Index": 53.7,
+    "Restaurant Price Index": 27.8,
+    "Local Purchasing Power Index": 117
+  },
+  {
+    "Rank": 47,
+    "Country": "Croatia",
+    "Cost of Living Index": 45.5,
+    "Rent Index": 13.8,
+    "Cost of Living Plus Rent Index": 30.3,
+    "Groceries Index": 43.5,
+    "Restaurant Price Index": 42.2,
+    "Local Purchasing Power Index": 75
+  },
+  {
+    "Rank": 48,
+    "Country": "Saudi Arabia",
+    "Cost of Living Index": 45.3,
+    "Rent Index": 11.3,
+    "Cost of Living Plus Rent Index": 29,
+    "Groceries Index": 41.6,
+    "Restaurant Price Index": 30.9,
+    "Local Purchasing Power Index": 134.9
+  },
+  {
+    "Rank": 49,
+    "Country": "Taiwan",
+    "Cost of Living Index": 45.2,
+    "Rent Index": 13.1,
+    "Cost of Living Plus Rent Index": 29.8,
+    "Groceries Index": 60.1,
+    "Restaurant Price Index": 23,
+    "Local Purchasing Power Index": 95.1
+  },
+  {
+    "Rank": 50,
+    "Country": "Portugal",
+    "Cost of Living Index": 45.1,
+    "Rent Index": 24,
+    "Cost of Living Plus Rent Index": 35,
+    "Groceries Index": 43.8,
+    "Restaurant Price Index": 36.9,
+    "Local Purchasing Power Index": 56.9
+  },
+  {
+    "Rank": 51,
+    "Country": "Oman",
+    "Cost of Living Index": 42.4,
+    "Rent Index": 12.2,
+    "Cost of Living Plus Rent Index": 27.9,
+    "Groceries Index": 39.9,
+    "Restaurant Price Index": 33.1,
+    "Local Purchasing Power Index": 139.8
+  },
+  {
+    "Rank": 52,
+    "Country": "Kuwait",
+    "Cost of Living Index": 42.1,
+    "Rent Index": 22.6,
+    "Cost of Living Plus Rent Index": 32.7,
+    "Groceries Index": 34.5,
+    "Restaurant Price Index": 36.4,
+    "Local Purchasing Power Index": 161.8
+  },
+  {
+    "Rank": 53,
+    "Country": "Albania",
+    "Cost of Living Index": 42.1,
+    "Rent Index": 10.6,
+    "Cost of Living Plus Rent Index": 27,
+    "Groceries Index": 42,
+    "Restaurant Price Index": 35.7,
+    "Local Purchasing Power Index": 39.9
+  },
+  {
+    "Rank": 54,
+    "Country": "Lebanon",
+    "Cost of Living Index": 41.8,
+    "Rent Index": 13.4,
+    "Cost of Living Plus Rent Index": 28.1,
+    "Groceries Index": 32.2,
+    "Restaurant Price Index": 37.1,
+    "Local Purchasing Power Index": 25.4
+  },
+  {
+    "Rank": 55,
+    "Country": "Hungary",
+    "Cost of Living Index": 41.7,
+    "Rent Index": 11.3,
+    "Cost of Living Plus Rent Index": 27.1,
+    "Groceries Index": 39.8,
+    "Restaurant Price Index": 37,
+    "Local Purchasing Power Index": 63.4
+  },
+  {
+    "Rank": 56,
+    "Country": "Palestine",
+    "Cost of Living Index": 41.6,
+    "Rent Index": 8,
+    "Cost of Living Plus Rent Index": 25.5,
+    "Groceries Index": 40.7,
+    "Restaurant Price Index": 27.4,
+    "Local Purchasing Power Index": 46.1
+  },
+  {
+    "Rank": 57,
+    "Country": "Jordan",
+    "Cost of Living Index": 41.2,
+    "Rent Index": 7.2,
+    "Cost of Living Plus Rent Index": 24.9,
+    "Groceries Index": 37.1,
+    "Restaurant Price Index": 34.8,
+    "Local Purchasing Power Index": 45.5
+  },
+  {
+    "Rank": 58,
+    "Country": "Armenia",
+    "Cost of Living Index": 41,
+    "Rent Index": 19,
+    "Cost of Living Plus Rent Index": 30.5,
+    "Groceries Index": 36,
+    "Restaurant Price Index": 38.9,
+    "Local Purchasing Power Index": 38.5
+  },
+  {
+    "Rank": 59,
+    "Country": "Poland",
+    "Cost of Living Index": 40.8,
+    "Rent Index": 17.1,
+    "Cost of Living Plus Rent Index": 29.5,
+    "Groceries Index": 36.8,
+    "Restaurant Price Index": 35,
+    "Local Purchasing Power Index": 85.8
+  },
+  {
+    "Rank": 60,
+    "Country": "Mexico",
+    "Cost of Living Index": 40.2,
+    "Rent Index": 15.5,
+    "Cost of Living Plus Rent Index": 28.4,
+    "Groceries Index": 43.4,
+    "Restaurant Price Index": 35.7,
+    "Local Purchasing Power Index": 45.4
+  },
+  {
+    "Rank": 61,
+    "Country": "El Salvador",
+    "Cost of Living Index": 39.5,
+    "Rent Index": 14.6,
+    "Cost of Living Plus Rent Index": 27.6,
+    "Groceries Index": 43.4,
+    "Restaurant Price Index": 29.6,
+    "Local Purchasing Power Index": 31.9
+  },
+  {
+    "Rank": 62,
+    "Country": "Montenegro",
+    "Cost of Living Index": 39.4,
+    "Rent Index": 15.8,
+    "Cost of Living Plus Rent Index": 28.1,
+    "Groceries Index": 36.7,
+    "Restaurant Price Index": 36.3,
+    "Local Purchasing Power Index": 52.9
+  },
+  {
+    "Rank": 63,
+    "Country": "Chile",
+    "Cost of Living Index": 39.1,
+    "Rent Index": 11.1,
+    "Cost of Living Plus Rent Index": 25.7,
+    "Groceries Index": 41.6,
+    "Restaurant Price Index": 34.8,
+    "Local Purchasing Power Index": 45.1
+  },
+  {
+    "Rank": 64,
+    "Country": "Guatemala",
+    "Cost of Living Index": 38.8,
+    "Rent Index": 12.6,
+    "Cost of Living Plus Rent Index": 26.3,
+    "Groceries Index": 41.8,
+    "Restaurant Price Index": 31.1,
+    "Local Purchasing Power Index": 34.5
+  },
+  {
+    "Rank": 65,
+    "Country": "Venezuela",
+    "Cost of Living Index": 38.3,
+    "Rent Index": 5.8,
+    "Cost of Living Plus Rent Index": 22.7,
+    "Groceries Index": 39.5,
+    "Restaurant Price Index": 37.7,
+    "Local Purchasing Power Index": 14.7
+  },
+  {
+    "Rank": 66,
+    "Country": "Bulgaria",
+    "Cost of Living Index": 38.3,
+    "Rent Index": 10.3,
+    "Cost of Living Plus Rent Index": 24.9,
+    "Groceries Index": 38.2,
+    "Restaurant Price Index": 34.7,
+    "Local Purchasing Power Index": 68.4
+  },
+  {
+    "Rank": 67,
+    "Country": "Dominican Republic",
+    "Cost of Living Index": 37.9,
+    "Rent Index": 10.6,
+    "Cost of Living Plus Rent Index": 24.8,
+    "Groceries Index": 37.6,
+    "Restaurant Price Index": 33.1,
+    "Local Purchasing Power Index": 28.7
+  },
+  {
+    "Rank": 68,
+    "Country": "Serbia",
+    "Cost of Living Index": 37.7,
+    "Rent Index": 12.4,
+    "Cost of Living Plus Rent Index": 25.6,
+    "Groceries Index": 36,
+    "Restaurant Price Index": 31.2,
+    "Local Purchasing Power Index": 50.2
+  },
+  {
+    "Rank": 69,
+    "Country": "Romania",
+    "Cost of Living Index": 37.5,
+    "Rent Index": 9.9,
+    "Cost of Living Plus Rent Index": 24.2,
+    "Groceries Index": 36.6,
+    "Restaurant Price Index": 35.5,
+    "Local Purchasing Power Index": 63.8
+  },
+  {
+    "Rank": 70,
+    "Country": "Turkey",
+    "Cost of Living Index": 37.4,
+    "Rent Index": 13.2,
+    "Cost of Living Plus Rent Index": 25.8,
+    "Groceries Index": 37.6,
+    "Restaurant Price Index": 30.7,
+    "Local Purchasing Power Index": 49
+  },
+  {
+    "Rank": 71,
+    "Country": "Cambodia",
+    "Cost of Living Index": 37.3,
+    "Rent Index": 9.6,
+    "Cost of Living Plus Rent Index": 24,
+    "Groceries Index": 43.5,
+    "Restaurant Price Index": 22.7,
+    "Local Purchasing Power Index": 23.9
+  },
+  {
+    "Rank": 72,
+    "Country": "Cameroon",
+    "Cost of Living Index": 37.3,
+    "Rent Index": 16.9,
+    "Cost of Living Plus Rent Index": 27.5,
+    "Groceries Index": 34.6,
+    "Restaurant Price Index": 35.3,
+    "Local Purchasing Power Index": 10.5
+  },
+  {
+    "Rank": 73,
+    "Country": "Zimbabwe",
+    "Cost of Living Index": 37.2,
+    "Rent Index": 10,
+    "Cost of Living Plus Rent Index": 24.1,
+    "Groceries Index": 35.5,
+    "Restaurant Price Index": 26.7,
+    "Local Purchasing Power Index": 26.1
+  },
+  {
+    "Rank": 74,
+    "Country": "Mauritius",
+    "Cost of Living Index": 37.1,
+    "Rent Index": 10,
+    "Cost of Living Plus Rent Index": 24.1,
+    "Groceries Index": 40.7,
+    "Restaurant Price Index": 26.5,
+    "Local Purchasing Power Index": 43.2
+  },
+  {
+    "Rank": 75,
+    "Country": "Fiji",
+    "Cost of Living Index": 35.4,
+    "Rent Index": 15.3,
+    "Cost of Living Plus Rent Index": 25.8,
+    "Groceries Index": 43.7,
+    "Restaurant Price Index": 28.4,
+    "Local Purchasing Power Index": 68
+  },
+  {
+    "Rank": 76,
+    "Country": "Bosnia And Herzegovina",
+    "Cost of Living Index": 35,
+    "Rent Index": 6.2,
+    "Cost of Living Plus Rent Index": 21.2,
+    "Groceries Index": 34.5,
+    "Restaurant Price Index": 22.4,
+    "Local Purchasing Power Index": 56.9
+  },
+  {
+    "Rank": 77,
+    "Country": "Sri Lanka",
+    "Cost of Living Index": 34.6,
+    "Rent Index": 5.6,
+    "Cost of Living Plus Rent Index": 20.7,
+    "Groceries Index": 49.3,
+    "Restaurant Price Index": 18.5,
+    "Local Purchasing Power Index": 17.5
+  },
+  {
+    "Rank": 78,
+    "Country": "South Africa",
+    "Cost of Living Index": 34.5,
+    "Rent Index": 11.5,
+    "Cost of Living Plus Rent Index": 23.5,
+    "Groceries Index": 29.7,
+    "Restaurant Price Index": 29.5,
+    "Local Purchasing Power Index": 102.8
+  },
+  {
+    "Rank": 79,
+    "Country": "Thailand",
+    "Cost of Living Index": 34.1,
+    "Rent Index": 11.2,
+    "Cost of Living Plus Rent Index": 23.1,
+    "Groceries Index": 40.5,
+    "Restaurant Price Index": 18.3,
+    "Local Purchasing Power Index": 40.8
+  },
+  {
+    "Rank": 80,
+    "Country": "Moldova",
+    "Cost of Living Index": 34,
+    "Rent Index": 10.1,
+    "Cost of Living Plus Rent Index": 22.5,
+    "Groceries Index": 31.6,
+    "Restaurant Price Index": 26.6,
+    "Local Purchasing Power Index": 46.6
+  },
+  {
+    "Rank": 81,
+    "Country": "Georgia",
+    "Cost of Living Index": 33.4,
+    "Rent Index": 13.7,
+    "Cost of Living Plus Rent Index": 23.9,
+    "Groceries Index": 33.3,
+    "Restaurant Price Index": 31.6,
+    "Local Purchasing Power Index": 35.3
+  },
+  {
+    "Rank": 82,
+    "Country": "North Macedonia",
+    "Cost of Living Index": 33,
+    "Rent Index": 6.5,
+    "Cost of Living Plus Rent Index": 20.3,
+    "Groceries Index": 32.1,
+    "Restaurant Price Index": 22.1,
+    "Local Purchasing Power Index": 51
+  },
+  {
+    "Rank": 83,
+    "Country": "Ecuador",
+    "Cost of Living Index": 32.6,
+    "Rent Index": 8.6,
+    "Cost of Living Plus Rent Index": 21.1,
+    "Groceries Index": 34.9,
+    "Restaurant Price Index": 24.5,
+    "Local Purchasing Power Index": 41.6
+  },
+  {
+    "Rank": 84,
+    "Country": "Kazakhstan",
+    "Cost of Living Index": 31.7,
+    "Rent Index": 12.3,
+    "Cost of Living Plus Rent Index": 22.4,
+    "Groceries Index": 32.2,
+    "Restaurant Price Index": 28.7,
+    "Local Purchasing Power Index": 44.7
+  },
+  {
+    "Rank": 85,
+    "Country": "China",
+    "Cost of Living Index": 31.7,
+    "Rent Index": 12.3,
+    "Cost of Living Plus Rent Index": 22.4,
+    "Groceries Index": 36.8,
+    "Restaurant Price Index": 20.6,
+    "Local Purchasing Power Index": 73.3
+  },
+  {
+    "Rank": 86,
+    "Country": "Nigeria",
+    "Cost of Living Index": 31.4,
+    "Rent Index": 22.1,
+    "Cost of Living Plus Rent Index": 27,
+    "Groceries Index": 37.5,
+    "Restaurant Price Index": 20.6,
+    "Local Purchasing Power Index": 11
+  },
+  {
+    "Rank": 87,
+    "Country": "Azerbaijan",
+    "Cost of Living Index": 31.2,
+    "Rent Index": 8.7,
+    "Cost of Living Plus Rent Index": 20.4,
+    "Groceries Index": 29,
+    "Restaurant Price Index": 31.8,
+    "Local Purchasing Power Index": 37.2
+  },
+  {
+    "Rank": 88,
+    "Country": "Philippines",
+    "Cost of Living Index": 31,
+    "Rent Index": 7.1,
+    "Cost of Living Plus Rent Index": 19.6,
+    "Groceries Index": 35,
+    "Restaurant Price Index": 16.8,
+    "Local Purchasing Power Index": 33.3
+  },
+  {
+    "Rank": 89,
+    "Country": "Russia",
+    "Cost of Living Index": 31,
+    "Rent Index": 10,
+    "Cost of Living Plus Rent Index": 20.9,
+    "Groceries Index": 28.8,
+    "Restaurant Price Index": 28,
+    "Local Purchasing Power Index": 50.6
+  },
+  {
+    "Rank": 90,
+    "Country": "Ghana",
+    "Cost of Living Index": 30.9,
+    "Rent Index": 10.2,
+    "Cost of Living Plus Rent Index": 21,
+    "Groceries Index": 33.9,
+    "Restaurant Price Index": 26.9,
+    "Local Purchasing Power Index": 18.4
+  },
+  {
+    "Rank": 91,
+    "Country": "Brazil",
+    "Cost of Living Index": 30.2,
+    "Rent Index": 7.9,
+    "Cost of Living Plus Rent Index": 19.5,
+    "Groceries Index": 29.5,
+    "Restaurant Price Index": 22.6,
+    "Local Purchasing Power Index": 37.2
+  },
+  {
+    "Rank": 92,
+    "Country": "Kenya",
+    "Cost of Living Index": 30.2,
+    "Rent Index": 8.5,
+    "Cost of Living Plus Rent Index": 19.8,
+    "Groceries Index": 31,
+    "Restaurant Price Index": 22.1,
+    "Local Purchasing Power Index": 34.2
+  },
+  {
+    "Rank": 93,
+    "Country": "Botswana",
+    "Cost of Living Index": 30.1,
+    "Rent Index": 6.1,
+    "Cost of Living Plus Rent Index": 18.5,
+    "Groceries Index": 30,
+    "Restaurant Price Index": 22.5,
+    "Local Purchasing Power Index": 64.4
+  },
+  {
+    "Rank": 94,
+    "Country": "Malaysia",
+    "Cost of Living Index": 30,
+    "Rent Index": 7.7,
+    "Cost of Living Plus Rent Index": 19.3,
+    "Groceries Index": 36.3,
+    "Restaurant Price Index": 18.9,
+    "Local Purchasing Power Index": 79.9
+  },
+  {
+    "Rank": 95,
+    "Country": "Peru",
+    "Cost of Living Index": 30,
+    "Rent Index": 9.6,
+    "Cost of Living Plus Rent Index": 20.2,
+    "Groceries Index": 31.5,
+    "Restaurant Price Index": 21.3,
+    "Local Purchasing Power Index": 34.8
+  },
+  {
+    "Rank": 96,
+    "Country": "Morocco",
+    "Cost of Living Index": 29.5,
+    "Rent Index": 7.4,
+    "Cost of Living Plus Rent Index": 18.9,
+    "Groceries Index": 29.8,
+    "Restaurant Price Index": 20.7,
+    "Local Purchasing Power Index": 38.6
+  },
+  {
+    "Rank": 97,
+    "Country": "Kosovo (Disputed Territory)",
+    "Cost of Living Index": 29.5,
+    "Rent Index": 7.7,
+    "Cost of Living Plus Rent Index": 19,
+    "Groceries Index": 29.4,
+    "Restaurant Price Index": 20.6,
+    "Local Purchasing Power Index": 46.7
+  },
+  {
+    "Rank": 98,
+    "Country": "Argentina",
+    "Cost of Living Index": 29.4,
+    "Rent Index": 7.6,
+    "Cost of Living Plus Rent Index": 18.9,
+    "Groceries Index": 29.7,
+    "Restaurant Price Index": 24.8,
+    "Local Purchasing Power Index": 41.5
+  },
+  {
+    "Rank": 99,
+    "Country": "Iraq",
+    "Cost of Living Index": 29.3,
+    "Rent Index": 7.6,
+    "Cost of Living Plus Rent Index": 18.9,
+    "Groceries Index": 28.2,
+    "Restaurant Price Index": 20.9,
+    "Local Purchasing Power Index": 50.4
+  },
+  {
+    "Rank": 100,
+    "Country": "Uganda",
+    "Cost of Living Index": 29.1,
+    "Rent Index": 7.7,
+    "Cost of Living Plus Rent Index": 18.8,
+    "Groceries Index": 29.3,
+    "Restaurant Price Index": 21.6,
+    "Local Purchasing Power Index": 17.8
+  },
+  {
+    "Rank": 101,
+    "Country": "Algeria",
+    "Cost of Living Index": 28.9,
+    "Rent Index": 3.8,
+    "Cost of Living Plus Rent Index": 16.9,
+    "Groceries Index": 36.8,
+    "Restaurant Price Index": 14,
+    "Local Purchasing Power Index": 29.9
+  },
+  {
+    "Rank": 102,
+    "Country": "Colombia",
+    "Cost of Living Index": 28.8,
+    "Rent Index": 8.6,
+    "Cost of Living Plus Rent Index": 19.1,
+    "Groceries Index": 30.3,
+    "Restaurant Price Index": 20.5,
+    "Local Purchasing Power Index": 33.7
+  },
+  {
+    "Rank": 103,
+    "Country": "Vietnam",
+    "Cost of Living Index": 28.7,
+    "Rent Index": 9,
+    "Cost of Living Plus Rent Index": 19.2,
+    "Groceries Index": 33.9,
+    "Restaurant Price Index": 14.8,
+    "Local Purchasing Power Index": 40.5
+  },
+  {
+    "Rank": 104,
+    "Country": "Tunisia",
+    "Cost of Living Index": 28.1,
+    "Rent Index": 4.7,
+    "Cost of Living Plus Rent Index": 16.9,
+    "Groceries Index": 31.4,
+    "Restaurant Price Index": 15,
+    "Local Purchasing Power Index": 32.2
+  },
+  {
+    "Rank": 105,
+    "Country": "Bolivia",
+    "Cost of Living Index": 27.6,
+    "Rent Index": 7.5,
+    "Cost of Living Plus Rent Index": 18,
+    "Groceries Index": 27,
+    "Restaurant Price Index": 19.4,
+    "Local Purchasing Power Index": 37.9
+  },
+  {
+    "Rank": 106,
+    "Country": "Kyrgyzstan",
+    "Cost of Living Index": 27.6,
+    "Rent Index": 10.7,
+    "Cost of Living Plus Rent Index": 19.5,
+    "Groceries Index": 28.2,
+    "Restaurant Price Index": 20.2,
+    "Local Purchasing Power Index": 30.7
+  },
+  {
+    "Rank": 107,
+    "Country": "Indonesia",
+    "Cost of Living Index": 26.7,
+    "Rent Index": 7.7,
+    "Cost of Living Plus Rent Index": 17.6,
+    "Groceries Index": 33.4,
+    "Restaurant Price Index": 13.5,
+    "Local Purchasing Power Index": 31.7
+  },
+  {
+    "Rank": 108,
+    "Country": "Iran",
+    "Cost of Living Index": 26.4,
+    "Rent Index": 8.5,
+    "Cost of Living Plus Rent Index": 17.8,
+    "Groceries Index": 22,
+    "Restaurant Price Index": 16.3,
+    "Local Purchasing Power Index": 26
+  },
+  {
+    "Rank": 109,
+    "Country": "Uzbekistan",
+    "Cost of Living Index": 26.4,
+    "Rent Index": 11.2,
+    "Cost of Living Plus Rent Index": 19.1,
+    "Groceries Index": 28.4,
+    "Restaurant Price Index": 18.6,
+    "Local Purchasing Power Index": 39.3
+  },
+  {
+    "Rank": 110,
+    "Country": "Belarus",
+    "Cost of Living Index": 26.4,
+    "Rent Index": 8.3,
+    "Cost of Living Plus Rent Index": 17.7,
+    "Groceries Index": 25.4,
+    "Restaurant Price Index": 24.9,
+    "Local Purchasing Power Index": 51.8
+  },
+  {
+    "Rank": 111,
+    "Country": "Ukraine",
+    "Cost of Living Index": 25.9,
+    "Rent Index": 7.6,
+    "Cost of Living Plus Rent Index": 17.1,
+    "Groceries Index": 25.4,
+    "Restaurant Price Index": 20.7,
+    "Local Purchasing Power Index": 39.5
+  },
+  {
+    "Rank": 112,
+    "Country": "Nepal",
+    "Cost of Living Index": 25.5,
+    "Rent Index": 3.5,
+    "Cost of Living Plus Rent Index": 15,
+    "Groceries Index": 25.6,
+    "Restaurant Price Index": 16.2,
+    "Local Purchasing Power Index": 25.4
+  },
+  {
+    "Rank": 113,
+    "Country": "Paraguay",
+    "Cost of Living Index": 25.4,
+    "Rent Index": 9.1,
+    "Cost of Living Plus Rent Index": 17.6,
+    "Groceries Index": 24,
+    "Restaurant Price Index": 17.6,
+    "Local Purchasing Power Index": 34.6
+  },
+  {
+    "Rank": 114,
+    "Country": "Madagascar",
+    "Cost of Living Index": 24.5,
+    "Rent Index": 7.8,
+    "Cost of Living Plus Rent Index": 16.5,
+    "Groceries Index": 24.1,
+    "Restaurant Price Index": 14.3,
+    "Local Purchasing Power Index": 15.6
+  },
+  {
+    "Rank": 115,
+    "Country": "Syria",
+    "Cost of Living Index": 24,
+    "Rent Index": 3.7,
+    "Cost of Living Plus Rent Index": 14.2,
+    "Groceries Index": 24.5,
+    "Restaurant Price Index": 15.3,
+    "Local Purchasing Power Index": 5.5
+  },
+  {
+    "Rank": 116,
+    "Country": "Tanzania",
+    "Cost of Living Index": 23.8,
+    "Rent Index": 8.4,
+    "Cost of Living Plus Rent Index": 16.4,
+    "Groceries Index": 25.4,
+    "Restaurant Price Index": 16.5,
+    "Local Purchasing Power Index": 25.9
+  },
+  {
+    "Rank": 117,
+    "Country": "Bangladesh",
+    "Cost of Living Index": 22.5,
+    "Rent Index": 2.4,
+    "Cost of Living Plus Rent Index": 12.8,
+    "Groceries Index": 25.7,
+    "Restaurant Price Index": 12.8,
+    "Local Purchasing Power Index": 33.1
+  },
+  {
+    "Rank": 118,
+    "Country": "India",
+    "Cost of Living Index": 21.2,
+    "Rent Index": 5.6,
+    "Cost of Living Plus Rent Index": 13.7,
+    "Groceries Index": 23.8,
+    "Restaurant Price Index": 15.1,
+    "Local Purchasing Power Index": 82.6
+  },
+  {
+    "Rank": 119,
+    "Country": "Egypt",
+    "Cost of Living Index": 21,
+    "Rent Index": 3.7,
+    "Cost of Living Plus Rent Index": 12.7,
+    "Groceries Index": 21.2,
+    "Restaurant Price Index": 16.2,
+    "Local Purchasing Power Index": 20
+  },
+  {
+    "Rank": 120,
+    "Country": "Libya",
+    "Cost of Living Index": 20.4,
+    "Rent Index": 4.3,
+    "Cost of Living Plus Rent Index": 12.7,
+    "Groceries Index": 22.2,
+    "Restaurant Price Index": 15.2,
+    "Local Purchasing Power Index": 42
+  },
+  {
+    "Rank": 121,
+    "Country": "Pakistan",
+    "Cost of Living Index": 18.8,
+    "Rent Index": 2.8,
+    "Cost of Living Plus Rent Index": 11.1,
+    "Groceries Index": 17.5,
+    "Restaurant Price Index": 12.9,
+    "Local Purchasing Power Index": 29.1
+  }
+]
