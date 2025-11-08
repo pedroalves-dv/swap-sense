@@ -38,6 +38,9 @@ export default defineConfig(({ mode }) => {
         },
       }),
     ],
-    base: mode === 'production' ? '/global-exchange-tool/' : '/',
+    // Base path used when deploying to GitHub Pages for a project site.
+    // Updated to match the repository name `swap-sense` so assets load correctly
+    // when served from: https://<username>.github.io/swap-sense/
+    base: mode === 'production' ? '/swap-sense/' : '/',
   };
 });
