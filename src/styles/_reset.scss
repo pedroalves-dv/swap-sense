@@ -32,6 +32,17 @@ textarea,
 select {
   font: inherit;
 }
+
+/* Accessibility: visible focus ring for keyboard users */
+button:focus,
+input:focus,
+select:focus,
+a:focus {
+  outline: none !important;
+  box-shadow: none !important;
+  border-color: inherit !important;
+  z-index: 2;
+}
 p,
 h1,
 h2,

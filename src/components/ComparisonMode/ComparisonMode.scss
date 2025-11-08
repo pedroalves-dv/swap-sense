@@ -1,0 +1,280 @@
+@use '../../styles/variables' as v;
+
+.comparison-mode {
+  padding: v.$spacing-xl;
+  background-color: var(--color-card);
+  display: flex;
+  flex-direction: column;
+  gap: v.$spacing-lg;
+}
+
+.comparison-input {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: v.$spacing-md;
+  padding: v.$spacing-md;
+  background: var(--color-secondary);
+  border-radius: v.$border-radius;
+  border: 1px solid var(--color-border);
+
+  .input-group {
+    display: flex;
+    flex-direction: column;
+    gap: v.$spacing-xs;
+
+    label {
+      font-size: 0.75rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: var(--color-text-muted);
+    }
+
+    input,
+    select {
+      padding: v.$spacing-sm v.$spacing-md;
+      border: 1px solid var(--color-border);
+      border-radius: v.$border-radius;
+      background: var(--color-background);
+      color: var(--color-text-primary);
+      font-size: 0.9375rem;
+      font-family: inherit;
+      transition: all v.$transition-base;
+
+      &:focus {
+        outline: none;
+        border-color: var(--color-border-focus);
+        box-shadow: 0 0 0 2px var(--color-accent-alpha);
+      }
+    }
+
+    input[type='number'] {
+      font-size: 1.125rem;
+      font-weight: 600;
+      letter-spacing: -0.01em;
+    }
+
+    select {
+      padding-left: v.$spacing-md;
+      padding-right: 2rem;
+      appearance: none;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath fill='%2364748b' d='M6 9L1 4h10z'/%3E%3C/svg%3E");
+      background-repeat: no-repeat;
+      background-position: right 0.75rem center;
+      cursor: pointer;
+
+      &:hover {
+        border-color: var(--color-border-hover);
+      }
+    }
+  }
+
+  .add-currency {
+    display: flex;
+    flex-direction: column;
+    gap: v.$spacing-xs;
+
+    label {
+      font-size: 0.75rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: var(--color-text-muted);
+    }
+
+    select {
+      padding: v.$spacing-sm v.$spacing-md;
+      border: 1px solid var(--color-border);
+      border-radius: v.$border-radius;
+      background: var(--color-background);
+      color: var(--color-text-primary);
+      font-size: 0.9375rem;
+      padding-right: 2rem;
+      appearance: none;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath fill='%2364748b' d='M6 9L1 4h10z'/%3E%3C/svg%3E");
+      background-repeat: no-repeat;
+      background-position: right 0.75rem center;
+      cursor: pointer;
+      transition: all v.$transition-base;
+
+      &:focus {
+        outline: none;
+        border-color: var(--color-border-focus);
+        box-shadow: 0 0 0 2px var(--color-accent-alpha);
+      }
+
+      &:disabled {
+        opacity: 0.6;
+        cursor: not-allowed;
+      }
+    }
+
+    .limit-note {
+      font-size: 0.75rem;
+      color: var(--color-text-muted);
+      font-style: italic;
+    }
+  }
+}
+
+.loading {
+  text-align: center;
+  padding: v.$spacing-xl;
+  color: var(--color-text-muted);
+  font-size: 0.9375rem;
+}
+
+.comparison-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: v.$spacing-md;
+}
+
+.comparison-card {
+  position: relative;
+  padding: v.$spacing-md;
+  background: var(--color-secondary);
+  border: 1px solid var(--color-border);
+  border-radius: v.$border-radius;
+  transition: all v.$transition-base;
+
+  &:hover {
+    border-color: var(--color-border-hover);
+    box-shadow: var(--shadow-md);
+
+    .remove-btn {
+      opacity: 1;
+    }
+  }
+
+  .remove-btn {
+    position: absolute;
+    top: v.$spacing-xs;
+    right: v.$spacing-xs;
+    width: 24px;
+    height: 24px;
+    border: none;
+    background: var(--color-background);
+    color: var(--color-text-muted);
+    border-radius: 50%;
+    font-size: 1.25rem;
+    line-height: 1;
+    cursor: pointer;
+    opacity: 0;
+    transition: all v.$transition-base;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &:hover {
+      background: var(--color-error);
+      color: white;
+    }
+  }
+
+  .currency-header {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    margin-bottom: v.$spacing-sm;
+
+    .currency-code {
+      font-size: 0.875rem;
+      font-weight: 700;
+      font-family: 'JetBrains Mono', 'Monaco', 'Courier New', monospace;
+      color: var(--color-accent);
+      text-transform: uppercase;
+    }
+
+    .currency-name {
+      font-size: 0.75rem;
+      color: var(--color-text-muted);
+    }
+  }
+
+  .converted-amount {
+    font-size: 1.75rem;
+    font-weight: 700;
+    color: var(--color-text-primary);
+    margin-bottom: v.$spacing-xs;
+    font-variant-numeric: tabular-nums;
+  }
+
+  .percent-diff {
+    font-size: 0.8125rem;
+    font-weight: 600;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+
+    &.positive {
+      color: var(--color-success);
+    }
+
+    &.negative {
+      color: var(--color-error);
+    }
+
+    .vs-baseline {
+      font-size: 0.6875rem;
+      font-weight: 400;
+      color: var(--color-text-muted);
+    }
+  }
+}
+
+.empty-state {
+  grid-column: 1 / -1;
+  text-align: center;
+  padding: v.$spacing-2xl;
+  color: var(--color-text-muted);
+
+  p {
+    margin: 0;
+    font-size: 0.9375rem;
+  }
+
+  .hint {
+    margin-top: v.$spacing-xs;
+    font-size: 0.8125rem;
+    opacity: 0.7;
+  }
+}
+
+@media (max-width: 968px) {
+  .comparison-input {
+    grid-template-columns: 1fr;
+  }
+
+  .comparison-grid {
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  }
+}
+
+@media (max-width: 768px) {
+  .comparison-mode {
+    padding: v.$spacing-lg;
+    gap: v.$spacing-md;
+  }
+
+  .comparison-input {
+    padding: v.$spacing-sm;
+    gap: v.$spacing-sm;
+    grid-template-columns: 1fr;
+  }
+
+  .comparison-grid {
+    grid-template-columns: 1fr;
+    gap: v.$spacing-sm;
+  }
+
+  .comparison-card {
+    .remove-btn {
+      opacity: 1;
+    }
+
+    .converted-amount {
+      font-size: 1.5rem;
+    }
+  }
+}

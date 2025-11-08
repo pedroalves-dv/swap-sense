@@ -1,79 +1,166 @@
 @use '../../styles/variables' as v;
-@use '../../styles/fonts';
 
 .header {
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 9999;
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
   align-items: center;
-  height: 45px;
-  width: 100%;
-  padding: 5px 20px 5px 10px;
-  background-color: var(--color-dark);
-  color: var(--color-primary);
-  border-bottom: 1px solid var(--color-grey);
+  justify-content: space-between;
+  padding: v.$spacing-sm v.$spacing-xl;
+  background-color: var(--color-card);
+  border-bottom: 1px solid var(--color-border);
+  box-shadow: var(--shadow-sm);
+  position: sticky;
+  top: 0;
+  z-index: 100;
 }
 
-.logo {
-  font-size: 1.5rem;
-  font-weight: 700;
-  // letter-spacing: -1px;
-  color: var(--color-primary);
+.header-brand {
+  display: flex;
+  align-items: center;
+  gap: v.$spacing-sm;
 }
 
-/* style for the dark/light theme toggle button */
-.dark-mode-toggle {
-  width: 45px;
-  height: 20px;
-  position: relative;
-  border-radius: 20px;
-  cursor: pointer;
-
-  background: var(--color-light);
-  transition: background 0.4s;
-  border: none;
-}
-
-.dark-mode-toggle:before {
-  content: '';
-  position: absolute;
-  top: 50%;
-  left: 4px;
-  transform: translateY(-50%);
+.header-logo {
   width: 24px;
-  height: 15px;
-  border-radius: 20px;
-  background: var(--color-primary);
-  transition: left 0.4s, background 0.4s;
+  height: 24px;
+  object-fit: contain;
+  transform: rotate(90deg);
 }
-/* style for the button when it is active */
-.dark-mode-toggle.active {
-  width: 45px;
-  height: 20px;
-  position: relative;
-  border-radius: 20px;
-  cursor: pointer;
+
+.header-title {
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: var(--color-text-primary);
+  margin: 0;
+  letter-spacing: -0.04em;
+}
+
+.header-controls {
+  display: flex;
+  align-items: stretch;
+  gap: v.$spacing-md;
+  height: 36px;
+}
+
+.mode-toggle {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  padding: 0 1px;
+  background: var(--color-secondary);
+  border: 1px solid var(--color-border);
+  border-radius: v.$border-radius;
+}
+
+.mode-btn {
+  padding: v.$spacing-xs v.$spacing-md;
+  background: transparent;
   border: none;
-  background: var(--color-dark);
-  transition: background 0.4s;
+  border-radius: v.$border-radius-sm;
+  font-size: 0.8125rem;
+  font-weight: 600;
+  color: var(--color-text-muted);
+  cursor: pointer;
+  transition: all v.$transition-base;
+  white-space: nowrap;
+
+  &:hover {
+    color: var(--color-accent);
+  }
+
+  &.active {
+    background: var(--color-background);
+    color: var(--color-accent);
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+  }
 }
-.dark-mode-toggle.active:before {
-  left: calc(100% - 28px);
-  background: var(--color-primary);
-  border-radius: 20px;
-  // border: none;
-  content: '';
+
+.theme-toggle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 v.$spacing-md;
+  background: var(--color-secondary);
+  border: none;
+  border-radius: v.$border-radius;
+  cursor: pointer;
+  transition: all v.$transition-base;
+  color: var(--color-text-secondary);
+
+  &:hover {
+    background: var(--color-background);
+  }
+}
+
+.theme-toggle:focus {
+  outline: none;
+  border: none;
+  box-shadow: none;
+}
+
+.toggle-switch {
+  position: relative;
+  width: 32px;
+  height: 16px;
+  background: var(--color-border);
+  border-radius: 12px;
+  transition: all v.$transition-base;
+
+  &.active {
+    background: var(--color-accent);
+  }
+}
+
+.toggle-slider {
   position: absolute;
-  // top: 50%;
-  // transform: translateY(-50%);
-  width: 24px;
-  height: 15px;
-  border-radius: 20px;
-  background: var(--color-primary);
-  transition: left 0.4s, background 0.4s;
-  // border-bottom: 1px solid var(--color-dark);
+  top: 2px;
+  left: 2px;
+  width: 12px;
+  height: 12px;
+  background: var(--color-background);
+  border-radius: 50%;
+  transition: all v.$transition-base;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+
+  .toggle-switch.active & {
+    transform: translateX(16px);
+  }
+}
+
+@media (max-width: 768px) {
+  .header {
+    padding: v.$spacing-sm v.$spacing-md;
+  }
+
+  .header-title {
+    font-size: 0.9375rem;
+  }
+
+  .header-logo {
+    width: 20px;
+    height: 20px;
+  }
+
+  .header-controls {
+    gap: v.$spacing-sm;
+    height: 32px;
+  }
+
+  .mode-toggle {
+    padding: 3px;
+    gap: 3px;
+  }
+
+  .mode-btn {
+    padding: v.$spacing-xs v.$spacing-sm;
+    font-size: 0.75rem;
+  }
+
+  .theme-toggle {
+    padding: 0 v.$spacing-sm;
+
+    .theme-icon {
+      width: 14px;
+      height: 14px;
+    }
+  }
 }

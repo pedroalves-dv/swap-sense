@@ -1,0 +1,177 @@
+@use '../../styles/variables' as v;
+
+.favorite-currencies {
+  padding: v.$spacing-sm;
+  background: var(--color-secondary);
+  border: 1px solid var(--color-border);
+  border-radius: v.$border-radius;
+
+  .favorites-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: v.$spacing-xs;
+
+    .favorites-title {
+      font-size: 0.8rem;
+      font-weight: 600;
+      color: var(--color-text-secondary);
+      margin: 0;
+      letter-spacing: 0.02em;
+      padding-left: v.$spacing-2xs;
+    }
+
+    .add-favorite-btn {
+      width: 24px;
+      height: 24px;
+      padding: 0;
+      font-size: 1.125rem;
+      line-height: 1;
+      color: var(--color-text-muted);
+      background: transparent;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      transition: all v.$transition-base;
+
+      &:hover:not(:disabled) {
+        color: var(--color-warning);
+        background: rgba(217, 119, 6, 0.1);
+      }
+
+      &.favorited,
+      &:disabled {
+        color: var(--color-warning);
+        cursor: not-allowed;
+      }
+    }
+  }
+
+  .save-prompt {
+    padding: v.$spacing-xs v.$spacing-sm;
+    margin-bottom: v.$spacing-sm;
+    background: rgba(5, 150, 105, 0.1);
+    border: 1px solid var(--color-success);
+    border-radius: 4px;
+    font-size: 0.6875rem;
+    color: var(--color-success);
+    font-weight: 500;
+    text-align: center;
+    animation: slideDown 0.2s ease;
+  }
+
+  .favorites-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: v.$spacing-xs;
+
+    .pair-chip {
+      position: relative;
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+      padding: 4px v.$spacing-sm;
+      background: var(--color-card);
+      border: 1px solid var(--color-border);
+      border-radius: 4px;
+      font-size: 0.6875rem;
+      font-weight: 500;
+      color: var(--color-text-primary);
+      cursor: pointer;
+      transition: all v.$transition-base;
+
+      .pair-text {
+        font-family: 'SF Mono', 'Monaco', 'Consolas', monospace;
+        letter-spacing: -0.02em;
+        line-height: 1;
+      }
+
+      &.favorite {
+        border-color: var(--color-accent);
+        background: rgba(37, 99, 235, 0.05);
+
+        &:hover {
+          background: var(--color-accent);
+          border-color: var(--color-accent);
+          color: white;
+
+          .remove-btn {
+            color: white;
+            opacity: 1;
+          }
+        }
+      }
+
+      &.recent {
+        border-style: dashed;
+        color: var(--color-text-secondary);
+
+        &:hover {
+          background: var(--color-border);
+          border-color: var(--color-text-muted);
+          color: var(--color-text-primary);
+          border-style: solid;
+        }
+      }
+
+      &:active {
+        transform: scale(0.96);
+      }
+
+      .remove-btn {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: 14px;
+        height: 14px;
+        padding: 0;
+        margin-left: 2px;
+        font-size: 1rem;
+        line-height: 1;
+        color: var(--color-text-muted);
+        background: transparent;
+        border: none;
+        border-radius: 2px;
+        cursor: pointer;
+        opacity: 0.7;
+        transition: all v.$transition-base;
+
+        &:hover {
+          color: var(--color-error);
+          background: rgba(220, 38, 38, 0.1);
+          opacity: 1;
+        }
+
+        &:active {
+          transform: scale(0.9);
+        }
+      }
+    }
+  }
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-4px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 768px) {
+  .favorite-currencies {
+    padding: v.$spacing-sm;
+
+    .favorites-header .favorites-title {
+      font-size: 0.6875rem;
+    }
+
+    .favorites-list .pair-chip {
+      font-size: 0.625rem;
+      padding: 3px v.$spacing-xs;
+    }
+  }
+}

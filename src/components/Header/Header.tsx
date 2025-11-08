@@ -1,44 +1,76 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useCallback } from 'react';
 import './Header.scss';
 import logo from '../../assets/logo.png';
 
-function Header() {
-  const [lightMode, setLightMode] = useState(true);
+type AppMode = 'convert' | 'compare';
+
+interface HeaderProps {
+  mode?: AppMode;
+  setMode?: (mode: AppMode) => void;
+}
+
+function Header({ mode = 'convert', setMode }: HeaderProps) {
+  const [isDark, setIsDark] = useState(() => {
+    const saved = localStorage.getItem('swapsense-theme');
+    return saved === 'dark';
+  });
 
   useEffect(() => {
-    if (lightMode) {
-      document.body.classList.add('light-mode');
-      document.querySelector('.header')?.classList.add('light-mode');
-      document.querySelector('.footer')?.classList.add('light-mode');
+    const root = document.documentElement;
+    if (isDark) {
+      root.setAttribute('data-theme', 'dark');
+      localStorage.setItem('swapsense-theme', 'dark');
     } else {
-      document.body.classList.remove('light-mode');
-      document.querySelector('.header')?.classList.remove('light-mode');
-      document.querySelector('.footer')?.classList.remove('light-mode');
+      root.removeAttribute('data-theme');
+      localStorage.setItem('swapsense-theme', 'light');
     }
-  }, [lightMode]);
+  }, [isDark]);
 
-  const toggleLightMode = () => {
-    setLightMode(!lightMode);
-  };
+  const toggleTheme = useCallback(() => {
+    setIsDark((prev) => !prev);
+  }, []);
+
   return (
-    <div className="header">
-      <p className="title">
-        {/* <span className="logo">🌐︎</span> */}
-        <span className="logo">
-          <img
-            src={logo}
-            style={{ width: '26px', height: '26px' }}
-            alt="logo"
-          />
-        </span>
-      </p>
-      <button
-        type="button"
-        onClick={toggleLightMode}
-        className={`dark-mode-toggle ${lightMode ? 'active' : ''}`}
-        aria-label="Toggle Light Mode"
-      />
-    </div>
+    <header className="header">
+      <div className="header-brand">
+        <img src={logo} alt="Logo" className="header-logo" />
+        <h1 className="header-title">SwapSense</h1>
+      </div>
+
+      <div className="header-controls">
+        {setMode && (
+          <div className="mode-toggle">
+            <button
+              type="button"
+              onClick={() => setMode('convert')}
+              className={`mode-btn ${mode === 'convert' ? 'active' : ''}`}
+              aria-label="Convert mode"
+            >
+              Convert
+            </button>
+            <button
+              type="button"
+              onClick={() => setMode('compare')}
+              className={`mode-btn ${mode === 'compare' ? 'active' : ''}`}
+              aria-label="Compare mode"
+            >
+              Compare
+            </button>
+          </div>
+        )}
+
+        <button
+          type="button"
+          onClick={toggleTheme}
+          className="theme-toggle"
+          aria-label={isDark ? 'Switch to light mode' : 'Switch to dark mode'}
+        >
+          <div className={`toggle-switch ${isDark ? 'active' : ''}`}>
+            <div className="toggle-slider" />
+          </div>
+        </button>
+      </div>
+    </header>
   );
 }
 

@@ -1,85 +1,406 @@
 @use '../../styles/variables' as v;
 
 .spending-power {
-  padding: 20px;
-  background-color: var(--color-primary);
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  width: 100%;
-  border: 1px solid var(--color-grey);
+  padding: v.$spacing-xl;
+  background-color: var(--color-card);
+  display: flex;
+  flex-direction: column;
+  gap: v.$spacing-lg;
 
-  h1,
-  h2 {
-    color: var(--color-dark);
-    margin-bottom: 1.1rem;
-    letter-spacing: -1px;
-  }
-
-  .purchases {
+  // Header with country and purchasing power
+  .header-section {
     display: flex;
-    flex-direction: column;
-    gap: 1rem;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: v.$spacing-md;
+    padding-bottom: v.$spacing-md;
+    border-bottom: 1px solid var(--color-border);
 
-    .purchase {
+    h1 {
+      font-size: 1.125rem;
+      font-weight: 600;
+      color: var(--color-text-primary);
+      margin: 0;
+      letter-spacing: -0.02em;
+    }
+
+    .power-indicator {
       display: flex;
       align-items: center;
-      gap: 1rem;
-      background-color: var(--color-light);
-      padding: 10px;
-      border-radius: 8px;
-      font-size: 0.9rem;
+      gap: v.$spacing-sm;
+      padding: v.$spacing-xs v.$spacing-sm;
+      background: var(--color-secondary);
+      border-radius: v.$border-radius;
+      font-size: 0.8125rem;
 
-      img {
-        width: 40px;
-        height: 40px;
+      .label {
+        color: var(--color-text-secondary);
+        font-weight: 500;
       }
 
-      p {
-        margin: 0;
-        color: var(--color-dark);
+      .value {
+        font-weight: 700;
+        padding: 2px 6px;
+        border-radius: v.$border-radius-sm;
+
+        &.high {
+          color: var(--color-success);
+          background: rgba(5, 150, 105, 0.1);
+        }
+
+        &.medium {
+          color: var(--color-warning);
+          background: rgba(217, 119, 6, 0.1);
+        }
+
+        &.low {
+          color: var(--color-error);
+          background: rgba(220, 38, 38, 0.1);
+        }
       }
     }
   }
 
-  .quick-conversion {
-    input {
-      width: 100%;
-      margin-bottom: 0.5rem;
-      color: var(--color-dark);
-      background-color: var(--color-light);
-      border-color: var(--color-light);
-      border: 1px solid var(--color-dark);
-      border-radius: 50px;
+  // Balance section with slider
+  .balance {
+    display: flex;
+    flex-direction: column;
+    gap: v.$spacing-sm;
+
+    .quick-conversion {
+      display: flex;
+      flex-direction: column;
+      gap: v.$spacing-sm;
+
+      input[type='range'] {
+        /* Keep the control's box sized predictably and reserve space for the thumb
+        so the visual track doesn't get overlapped by the thumb at the edges. */
+        box-sizing: border-box;
+        width: 100%;
+        /* input height stays small (visual track height) while the thumb is larger
+        and centered with a negative margin. */
+        height: 6px;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        background: transparent; /* draw track with pseudo-elements only */
+        border-radius: 3px;
+        outline: none;
+        cursor: pointer;
+        box-shadow: none;
+
+        &::-webkit-slider-thumb {
+          -webkit-appearance: none;
+          appearance: none;
+          width: 18px;
+          height: 18px;
+          background: var(--color-border);
+          border-radius: 4px; /* square-ish thumb */
+          border: 2px solid var(--color-accent);
+          box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+          cursor: pointer;
+          transition: all v.$transition-base;
+          /* center the larger thumb over the smaller track */
+
+          &:hover {
+            background: var(--color-accent-hover);
+          }
+        }
+
+        &::-moz-range-thumb {
+          width: 18px;
+          height: 18px;
+          background: var(--color-accent);
+          border: 2px solid var(--color-accent-border);
+          border-radius: 4px; /* square-ish thumb */
+          cursor: pointer;
+          transition: all v.$transition-base;
+
+          /* Firefox doesn't always honor margin-top the same way, use translateY
+             to vertically center the thumb over the track. */
+          // transform: translateY(-6px);
+
+          &:hover {
+            background: var(--color-accent-hover);
+            transform: scale(1.03);
+          }
+        }
+
+        /* Use background-size-based fill for WebKit browsers to avoid overflow at edges */
+
+        /* Use background-size-based fill for WebKit browsers to avoid overflow at edges
+           and explicitly size/center the track so it doesn't extend under the thumb. */
+        &::-webkit-slider-runnable-track {
+          height: 18px;
+          /* make the visible track shorter than the input by the thumb width and
+             center it using horizontal margins */
+          width: calc(100% - 18px);
+          margin: 0;
+          background-color: var(--color-border);
+          background-image: linear-gradient(
+            to right,
+            var(--color-accent-border) 0%,
+            var(--color-accent-border) 100%
+          );
+          background-repeat: no-repeat;
+          background-size: var(--slider-progress, 0%) 100%;
+          border-radius: 3px;
+        }
+
+        /* Firefox: separate track and progress pseudo-elements */
+        /* Firefox: track and progress. Padding on the input will similarly
+           reduce the visible track area so we keep the same visual look. */
+        &::-moz-range-track {
+          background: var(--color-border);
+          height: 6px;
+          border-radius: 3px;
+        }
+
+        &::-moz-range-progress {
+          background: var(--color-accent-border);
+          height: 6px;
+          border-radius: 3px 0 0 3px;
+        }
+        &::-moz-range-track {
+          background: linear-gradient(
+            to right,
+            var(--color-accent) 0%,
+            var(--color-accent) var(--slider-progress, 50%),
+            var(--color-border) var(--slider-progress, 50%),
+            var(--color-border) 100%
+          );
+          height: 6px;
+          border-radius: 3px;
+        }
+      }
+
+      .amount {
+        text-align: center;
+        font-size: 1.8rem;
+        font-weight: 700;
+        color: var(--color-accent);
+        letter-spacing: -0.02em;
+      }
+    }
+  }
+
+  // Warning message
+  .no-data-message {
+    padding: v.$spacing-md;
+    background: rgba(217, 119, 6, 0.1);
+    border: 1px solid var(--color-warning);
+    border-radius: v.$border-radius;
+    text-align: center;
+
+    p {
+      margin: 0;
+      color: var(--color-text-primary);
+      font-size: 0.875rem;
+
+      &:first-child {
+        font-weight: 600;
+      }
+
+      &.hint {
+        margin-top: v.$spacing-xs;
+        font-size: 0.75rem;
+        color: var(--color-text-secondary);
+      }
+    }
+  }
+
+  // Category filter buttons
+  .category-filters {
+    display: flex;
+    gap: v.$spacing-2xs;
+    flex-wrap: wrap;
+    padding: v.$spacing-sm 0;
+
+    .category-filter {
+      display: flex;
+      align-items: center;
+      padding: v.$spacing-xs v.$spacing-sm v.$spacing-xs v.$spacing-xs;
+      font-size: 0.8125rem;
+      font-weight: 500;
+      color: var(--color-text-secondary);
+      background: var(--color-secondary);
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: all v.$transition-base;
+
+      .emoji {
+        font-size: 1rem;
+        line-height: 1;
+      }
+
+      .name {
+        line-height: 1;
+      }
+
+      &:hover {
+        background: var(--color-border);
+        color: var(--color-text-primary);
+        border-color: var(--color-text-muted);
+      }
+
+      &.active {
+        background: var(--color-accent);
+        border-color: 1px solid var(--color-accent);
+        color: white;
+
+        &:hover {
+          background: var(--color-accent-hover);
+          border-color: var(--color-accent-hover);
+        }
+      }
+
+      // &:active {
+      //   transform: scale(0.98);
+      // }
+    }
+  }
+
+  .category-filter:focus {
+    border-color: var(--color-secondary);
+  }
+
+  // Purchase items grid
+  .purchases {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+    gap: v.$spacing-md;
+
+    .purchase {
+      background: var(--color-secondary);
+      border: 1px solid var(--color-border);
+      border-radius: 8px;
+      padding: v.$spacing-sm;
+      display: flex;
+      align-items: flex-start;
+      gap: v.$spacing-sm;
+      transition: all v.$transition-base;
+
+      // &:hover {
+      //   border-color: var(--color-accent);
+      //   box-shadow: var(--shadow-md);
+      // }
+
+      .emoji-large {
+        font-size: 2.8rem;
+        line-height: 1;
+        flex-shrink: 0;
+      }
+
+      .purchase-info {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        // gap: v.$spacing-xs;
+        min-width: 0; // Allow text truncation
+
+        .purchase-quantity {
+          display: flex;
+          flex-direction: column;
+          gap: 2px;
+
+          .number {
+            font-size: 1.75rem;
+            font-weight: 700;
+            color: var(--color-accent);
+            line-height: 1;
+            letter-spacing: -0.02em;
+          }
+
+          .description {
+            font-size: 0.8125rem;
+            font-weight: 500;
+            color: var(--color-text-primary);
+            line-height: 1.3;
+          }
+        }
+
+        .purchase-price {
+          .price-label {
+            font-size: 0.6875rem;
+            color: var(--color-text-muted);
+            font-weight: 500;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  .spending-power {
+    .purchases {
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      gap: v.$spacing-sm;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .spending-power {
+    padding: v.$spacing-lg;
+    gap: v.$spacing-md;
+
+    .header-section {
+      h1 {
+        font-size: 1rem;
+      }
+
+      .power-indicator {
+        font-size: 0.75rem;
+      }
     }
 
-    input[type='range']::-webkit-slider-runnable-track {
-      width: 100%;
-      height: 24px;
-      cursor: pointer;
+    .balance .quick-conversion .amount {
+      font-size: 1.25rem;
     }
 
-    input[type='range'] {
-      -webkit-appearance: none;
-      appearance: none;
-      padding: 0 3px;
+    .category-filters {
+      gap: v.$spacing-xs;
+
+      .category-filter {
+        font-size: 0.75rem;
+        padding: v.$spacing-xs;
+
+        .emoji {
+          font-size: 0.875rem;
+        }
+      }
     }
-    /* slider thumb */
-    input[type='range']::-webkit-slider-thumb {
-      -webkit-appearance: none;
-      width: 32px;
-      height: 18px;
-      background: var(--color-grey);
-      border-radius: 50px;
-      cursor: pointer;
-      margin-top: 3px;
-    }
-    .amount {
-      color: var(--color-dark);
-      margin-bottom: 1.4rem;
-      margin-right: 2px;
-      font-size: 1.3rem;
-      text-align: right;
-      letter-spacing: -1px;
+
+    .purchases {
+      grid-template-columns: 1fr;
+      gap: v.$spacing-sm;
+
+      .purchase {
+        padding: v.$spacing-sm v.$spacing-md;
+
+        .emoji-large {
+          font-size: 2rem;
+        }
+
+        .purchase-info {
+          .purchase-quantity {
+            .number {
+              font-size: 1.5rem;
+            }
+
+            .description {
+              font-size: 0.75rem;
+            }
+          }
+
+          .purchase-price .price-label {
+            font-size: 0.625rem;
+          }
+        }
+      }
     }
   }
 }

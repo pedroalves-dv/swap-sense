@@ -1,15 +1,65 @@
 @use '../../styles/variables' as v;
 
 .footer {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  display: grid;
+  /* Use equal flexible columns on sides so the center column sits exactly in the middle */
+  grid-template-columns: 1fr auto 1fr;
   align-items: center;
-  height: 45px;
-  width: 100%;
-  padding: 8px 20px 8px 10px;
-  background-color: var(--color-dark);
-  color: var(--color-primary);
-  border-top: 1px solid var(--color-grey);
-  font-size: 0.8rem;
+  padding: v.$spacing-md v.$spacing-xl;
+  background-color: var(--color-card);
+  border-top: 1px solid var(--color-border);
+  font-size: 0.8125rem;
+  color: var(--color-text-secondary);
+
+  .title,
+  .author {
+    margin: 0;
+  }
+
+  /* Align left/right to the edges of their grid cells so the center element is visually centered */
+  .title {
+    justify-self: start;
+  }
+
+  .author {
+    justify-self: end;
+  }
+
+  .footer-center {
+    text-align: center;
+    justify-self: center;
+  }
+
+  .footer-github {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 28px;
+    height: 28px;
+    color: var(--color-text-secondary);
+    transition: color 0.18s ease, transform 0.18s ease;
+
+    svg {
+      width: 20px;
+      height: 20px;
+      display: block;
+      color: inherit;
+      fill: currentColor;
+    }
+
+    &:hover {
+      color: var(--color-accent);
+      transform: translateY(-1px);
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .footer {
+    padding: v.$spacing-sm v.$spacing-md;
+    font-size: 0.75rem;
+    grid-template-columns: 1fr;
+    gap: v.$spacing-xs;
+    text-align: center;
+  }
 }

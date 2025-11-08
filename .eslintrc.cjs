@@ -27,10 +27,20 @@ module.exports = {
       files: ['src/**/reducers/*.ts'],
       rules: { 'no-param-reassign': ['error', { props: false }] },
     },
+    {
+      files: ['vite.config.ts', '*.config.ts', '*.config.js'],
+      rules: {
+        'import/no-extraneous-dependencies': [
+          'error',
+          { devDependencies: true },
+        ],
+      },
+    },
   ],
   plugins: ['react', '@typescript-eslint', 'prettier'],
   rules: {
     'react/react-in-jsx-scope': 0,
+    'react/require-default-props': 0,
     'react/jsx-filename-extension': [
       2,
       { extensions: ['.js', '.jsx', '.ts', '.tsx'] },
