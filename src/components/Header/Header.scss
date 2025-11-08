@@ -128,16 +128,16 @@
 
 @media (max-width: 768px) {
   .header {
-    padding: v.$spacing-sm v.$spacing-md;
+    padding: v.$spacing-xl v.$spacing-2xl v.$spacing-lg v.$spacing-2xl;
   }
 
   .header-title {
-    font-size: 0.9375rem;
+    display: none;
   }
 
   .header-logo {
-    width: 20px;
-    height: 20px;
+    width: 30px;
+    height: 30px;
   }
 
   .header-controls {
@@ -151,7 +151,7 @@
   }
 
   .mode-btn {
-    padding: v.$spacing-xs v.$spacing-sm;
+    padding: v.$spacing-2xs v.$spacing-sm;
     font-size: 0.75rem;
   }
 

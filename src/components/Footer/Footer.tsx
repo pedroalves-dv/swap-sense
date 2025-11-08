@@ -10,7 +10,7 @@ function Footer() {
       <div className="footer-center">
         <a
           className="footer-github"
-          href="https://github.com/pedroalves-dv/global-exchange-tool"
+          href="https://github.com/pedroalves-dv/swap-sense"
           target="_blank"
           rel="noopener noreferrer"
           aria-label="SwapSense on GitHub"
@@ -28,7 +28,7 @@ function Footer() {
         </a>
       </div>
 
-      <p className="author">v1.0.0</p>
+      <p className="author">v1.2.0</p>
     </div>
   );
 }

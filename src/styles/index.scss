@@ -99,6 +99,7 @@ body,
 @media (max-width: 1100px) {
   .main-content {
     padding: v.$spacing-lg v.$spacing-md;
+    background-color: var(--color-accent);
   }
 
   .modules-container {

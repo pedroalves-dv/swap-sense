@@ -56,10 +56,29 @@
 
 @media (max-width: 768px) {
   .footer {
-    padding: v.$spacing-sm v.$spacing-md;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: v.$spacing-md v.$spacing-lg;
     font-size: 0.75rem;
-    grid-template-columns: 1fr;
-    gap: v.$spacing-xs;
-    text-align: center;
+    // grid-template-columns: 1fr;
+    // gap: v.$spacing-xs;
+    // text-align: center;
+  }
+
+  /* On small screens, push the center block to the right and keep the
+     version (`.author`) immediately after it so both appear grouped on the
+     right. This uses `margin-left: auto` to avoid changing the DOM. */
+  .footer-center {
+    margin-left: auto;
+    padding-right: 20px;
+    // display: inline-flex;
+    // align-items: center;
+    // gap: v.$spacing-2xl;
+  }
+
+  /* Ensure the version sits next to the icon and doesn't add extra auto margins */
+  .author {
+    margin-left: 0;
   }
 }
