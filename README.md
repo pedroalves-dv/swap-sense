@@ -4,10 +4,6 @@ SwapSense is a compact, responsive currency conversion app with an integrated Sp
 
 This repository contains a Vite + React + TypeScript application styled with SCSS. The app is intended as an MVP with an extensible updater script for refreshing cost-of-living data outside the client.
 
-## Quick links
-
-- Repo: https://github.com/pedroalves-dv/euro-converter
-
 ## Features
 
 - Currency conversion UI with live rates
